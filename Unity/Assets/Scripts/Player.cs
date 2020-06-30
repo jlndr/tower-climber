@@ -14,27 +14,17 @@ public class Player : MonoBehaviour
 
 	public GameObject jumpEffect;
 
-	// void Start()
-	// {
-	// 	source = GetComponent<AudioSource>();
-	// 	source.Play();
-	// }
 	void IncrementPoints()
 	{
 		++points;
-
 		scoreDisplay.text = "Score: " + points.ToString();
 	}
 
 	void Update()
 	{
-		if (!gameObject)
+		if (!gameObject && Input.GetKeyDown(KeyCode.R))
 		{
-			if (Input.GetKeyDown(KeyCode.R))
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-			}
-
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 		else
 		{

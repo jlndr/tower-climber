@@ -12,8 +12,4 @@ public class BasePlatform : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-	void Update()
-	{
-
-	}
 }

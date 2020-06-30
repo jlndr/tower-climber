@@ -9,6 +9,5 @@ public class SpawnPoint : MonoBehaviour
 	void Start()
 	{
 		Instantiate(platform, transform.position, Quaternion.identity);
-
 	}
 }
